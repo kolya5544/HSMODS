@@ -21,7 +21,7 @@ Place ModMaker one directory above folders, and run it in console
 Once ModMaker is done, newmod.hsmod will appear. You can then open a pull request to add this mod to the database. All submissions are reviewed manually
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Contribute your modifications using pull requests. Changes to the code are welcome, but should be documented. For major changes, open an issue to discuss the changes
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

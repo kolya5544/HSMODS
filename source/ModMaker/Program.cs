@@ -14,7 +14,7 @@ namespace ModMaker
         {
             Console.WriteLine(Properties.Resources.Banner1);
             Console.WriteLine(Properties.Resources.Banner2);
-            Console.WriteLine("By kolya5544");
+            Console.WriteLine("By kolya5544 | https://forgery.ga/ | https://hsmod.cf/");
             Console.WriteLine();
             if (args.Length == 2)
             {
@@ -61,7 +61,7 @@ namespace ModMaker
                 }
                 Console.WriteLine("Mod created! Saving to newmod.hsmod");
                 File.WriteAllBytes("newmod.hsmod", finalFile.ToArray());
-                Console.WriteLine("In order to publish your mod to FORGERY database, please, create a submission on https://hsmod.cf/");
+                Console.WriteLine("In order to publish your mod to FORGERY database, please, create a pull request on https://github.com/kolya5544/HSMODS");
             }
             else
             {
