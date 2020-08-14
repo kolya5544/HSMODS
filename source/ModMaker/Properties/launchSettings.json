@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ModMaker": {
+      "commandName": "Project",
+      "commandLineArgs": "MODDED ORIGINAL"
+    }
+  }
+}

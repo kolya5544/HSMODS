@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModMaker", "ModMaker\ModMaker.csproj", "{AF66E629-77DD-4936-845D-C2E4E9BBF2A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModInstaller", "ModInstaller\ModInstaller.csproj", "{76E42EE3-A6EA-4073-AB0D-59C7D7B66697}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF66E629-77DD-4936-845D-C2E4E9BBF2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF66E629-77DD-4936-845D-C2E4E9BBF2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF66E629-77DD-4936-845D-C2E4E9BBF2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF66E629-77DD-4936-845D-C2E4E9BBF2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E42EE3-A6EA-4073-AB0D-59C7D7B66697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E42EE3-A6EA-4073-AB0D-59C7D7B66697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E42EE3-A6EA-4073-AB0D-59C7D7B66697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E42EE3-A6EA-4073-AB0D-59C7D7B66697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6469FA-B7DA-4CF1-BEB7-76AF46545E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6469FA-B7DA-4CF1-BEB7-76AF46545E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6469FA-B7DA-4CF1-BEB7-76AF46545E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6469FA-B7DA-4CF1-BEB7-76AF46545E43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6043301B-6D71-4E13-8C09-F8335594CB76}
+	EndGlobalSection
+EndGlobal
