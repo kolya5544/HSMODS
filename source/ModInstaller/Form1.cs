@@ -189,10 +189,10 @@ namespace ModInstaller
                 {
                     backUp.Add(s);
                     Directory.CreateDirectory(Path.GetDirectoryName(config.GameDir + "/BACKUP" + s));
-                    File.Copy(config.GameDir + s, config.GameDir + "/BACKUP" + s);
+                    File.Copy(config.GameDir + s, config.GameDir + "/BACKUP" + s, true);
                 }
             }
-            if (File.Exists("backup.zip"))
+            if (File.Exists(config.GameDir+"/backup.zip"))
             {
                 File.Delete("backup.zip");
             }
