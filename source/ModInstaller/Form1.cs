@@ -56,47 +56,21 @@ namespace ModInstaller
                 
             }
             LoadModList();
-
-            //DEBUG TODO
-            /*modlist.Add(new Mod()
-            {
-                Author = "kolya5544",
-                Description = "Very\r\ngood\r\nmod!",
-                ID = 1,
-                Name = "Good Mod Very"
-            });
-            foreach (Mod mod in modlist)
-            {
-                listBox1.Items.Add(mod.Name);
-            }*/
         }
 
         private void LoadModList()
         {
-            /*TcpClient client = new TcpClient("95.181.157.203", 6760);
-            var ns = client.GetStream();
-            var sw = new StreamWriter(ns);
-            sw.AutoFlush = true;
-            sw.Write("list\r\n");
-            var bytess = default(byte[]);
-            using (var memstream = new MemoryStream())
-            {
-                var buffer = new byte[2048];
-                var bytesRead = default(int);
-                while ((bytesRead = ns.Read(buffer, 0, buffer.Length)) > 0)
-                    memstream.Write(buffer, 0, bytesRead);
-                bytess = memstream.ToArray();
-            }*/
             using (var w = new WebClient())
             {
                 string json = w.DownloadString(MODDB+"mods.json");
+                json = json.Replace("\\n", "\r\n");
                 modlist = JsonConvert.DeserializeObject<List<Mod>>(json);
                 listBox1.Items.Clear();
                 foreach (Mod mod in modlist)
                 {
                     listBox1.Items.Add(mod.Name);
                 }
-            }//DEBUG
+            }
         }
 
         private void LoadEnvironment()
