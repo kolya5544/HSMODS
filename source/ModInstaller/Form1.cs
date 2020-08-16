@@ -194,7 +194,7 @@ namespace ModInstaller
             }
             if (File.Exists(config.GameDir+"/backup.zip"))
             {
-                File.Delete("backup.zip");
+                File.Delete(config.GameDir+"/backup.zip");
             }
             ZipFile.CreateFromDirectory(config.GameDir + "/BACKUP", config.GameDir + "/backup.zip");
             foreach (string s in backUp)
@@ -280,9 +280,9 @@ namespace ModInstaller
         public void Overwrite(byte[] buffer, int offset, byte[] to_overwrite)
         {
             int location = 0;
-            if (buffer.Length < to_overwrite.Length)
+            if (buffer.Length < offset+to_overwrite.Length)
             {
-                buffer = new byte[to_overwrite.Length];
+                buffer = new byte[to_overwrite.Length+offset];
             }
             for (int i = offset; i < offset + to_overwrite.Length; i++)
             {
