@@ -1,21 +1,21 @@
 [{
-	"Name":"concussion PURPLE",
-	"Author":"kolya5544",
-	"Description":"MAKES UR CONCUSSION HAMMER ALOT MORE LIKE PURPLE :)))))",
-	"URL":"ConcussionPurple.bin"
-},{
-	"Name":"Money Bag",
-	"Author":"kolya5544",
-	"Description":"A mod that gives you infinite amount of money. To activate, buy anything in the shop.",
-	"URL":"MoneyBag.bin"
-},{
-	"Name":"Advanced Mod System",
-	"Author":"kolya5544",
-	"Description":"A raw addon to then manually install AMS modifications, or to develop your own.\nTo install modifications, put them in 'mods' folder.\nFor more info, please, visit https://github.com/kolya5544/HSMODS/ams",
-	"URL":"AMS.bin"
-},{
-	"Name":"Cheat menu v0.1",
-	"Author":"kolya5544",
-	"Description":"An example modification based on Advanced Mod System. Adds a cheat menu to the game. As for now, only allows you to increase liberation progress.\nAutomatically installs AMS. You don't have to download it seperately.",
-	"CheatMenu.bin"
+	"Name": "concussion PURPLE",
+	"Author": "kolya5544",
+	"Description": "MAKES UR CONCUSSION HAMMER ALOT MORE LIKE PURPLE :)))))",
+	"URL": "ConcussionPurple.bin"
+}, {
+	"Name": "Money Bag",
+	"Author": "kolya5544",
+	"Description": "A mod that gives you infinite amount of money. To activate, buy anything in the shop.",
+	"URL": "MoneyBag.bin"
+}, {
+	"Name": "Advanced Mod System",
+	"Author": "kolya5544",
+	"Description": "A raw addon to then manually install AMS modifications, or to develop your own.\nTo install modifications, put them in 'mods' folder.\nFor more info, please, visit https://github.com/kolya5544/HSMODS/ams",
+	"URL": "AMS.bin"
+}, {
+	"Name": "Cheat menu v0.1",
+	"Author": "kolya5544",
+	"Description": "An example modification based on Advanced Mod System. Adds a cheat menu to the game. As for now, only allows you to increase liberation progress.\nAutomatically installs AMS. You don't have to download it seperately.",
+	"URL":"CheatMenu.bin"
 }]
