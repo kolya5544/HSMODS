@@ -21,6 +21,6 @@
 }, {
 	"Name": "No Item Teleporter Cooldown",
 	"Author": "Artain",
-	"Description": "Disables the item teleporter cooldown so you can teleport anything you want, anytime you want."
+	"Description": "Disables the item teleporter cooldown so you can teleport anything you want, anytime you want.",
 	"URL":"NoItemTPCooldown.hsmod"
 }]
