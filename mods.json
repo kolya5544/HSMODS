@@ -18,4 +18,9 @@
 	"Author": "kolya5544",
 	"Description": "An example modification based on Advanced Mod System. Adds a cheat menu to the game. As for now, only allows you to increase liberation progress.\nAutomatically installs AMS. You don't have to download it seperately.",
 	"URL":"CheatMenu.bin"
+}, {
+	"Name": "No Item Teleporter Cooldown",
+	"Author": "Artain",
+	"Description": "Disables the item teleporter cooldown so you can teleport anything you want, anytime you want.",
+	"URL":"NoItemTPCooldown.hsmod"
 }]
