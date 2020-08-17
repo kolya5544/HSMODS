@@ -23,4 +23,9 @@
 	"Author": "Artain",
 	"Description": "Disables the item teleporter cooldown so you can teleport anything you want, anytime you want.",
 	"URL":"NoItemTPCooldown.hsmod"
+}, {
+	"Name": "No Item Teleporter",
+	"Author": "Artain",
+	"Description": "Disables the item teleporter so you can't teleport anything you want, anytime you want. To activate, teleport an item.\nSuggested therapy methods after commiting that attrocious act include: playing Heat Signature.",
+	"URL":"InfiniteItemTPCooldown.hsmod"
 }]
