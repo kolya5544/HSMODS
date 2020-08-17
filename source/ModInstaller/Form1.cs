@@ -40,6 +40,11 @@ namespace ModInstaller
             {
                 string json = File.ReadAllText("config.json");
                 config = JsonConvert.DeserializeObject<Config>(json);
+                config.ModInstalled = "null";
+                if (File.Exists(config.GameDir + "/mod"))
+                {
+                    config.ModInstalled = File.ReadAllText(config.GameDir + "/mod");
+                }
             } else
             {
                 config = new Config();
@@ -106,6 +111,7 @@ namespace ModInstaller
             if (File.Exists(sel + "/Heat_Signature.exe"))
             {
                 config.GameDir = sel;
+                config.ModInstalled = "null";
                 if (File.Exists(sel + "/mod"))
                 {
                     config.ModInstalled = File.ReadAllText(sel + "/mod");
