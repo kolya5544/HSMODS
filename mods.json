@@ -16,7 +16,7 @@
 }, {
 	"Name": "Cheat menu v0.1",
 	"Author": "kolya5544",
-	"Description": "An example modification based on Advanced Mod System. Adds a cheat menu to the game. As for now, only allows you to increase liberation progress.\nAutomatically installs AMS. You don't have to download it seperately.",
+	"Description": "An example modification based on Advanced Mod System. Adds a cheat menu to the game. As for now, only allows you to increase liberation progress.\nAutomatically installs AMS. You don't have to download it seperately.\n\nModification starts after about a minute after game start. Only works in windowed mode.",
 	"URL":"CheatMenu.bin"
 }, {
 	"Name": "No Item Teleporter Cooldown",
