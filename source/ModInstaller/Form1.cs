@@ -343,14 +343,23 @@ namespace ModInstaller
         private void button3_Click(object sender, EventArgs e)
         {
             // ZipFile.ExtractToDirectory(config.GameDir + "/backup.zip", config.GameDir);
-            ZipArchive zipArchive = ZipFile.OpenRead(config.GameDir + "/backup.zip");
-            foreach (ZipArchiveEntry entry in zipArchive.Entries)
+            if (File.Exists(config.GameDir + "/backup.zip"))
             {
-                entry.ExtractToFile(config.GameDir + "/"+entry.Name, true);
+                ZipArchive zipArchive = ZipFile.OpenRead(config.GameDir + "/backup.zip");
+                foreach (ZipArchiveEntry entry in zipArchive.Entries)
+                {
+                    entry.ExtractToFile(config.GameDir + "/" + entry.Name, true);
+                }
+                zipArchive.Dispose();
             }
-            zipArchive.Dispose();
-            File.Delete(config.GameDir + "/mod");
-            File.Delete(config.GameDir+"/backup.zip");
+            try
+            {
+                File.Delete(config.GameDir + "/mod");
+                File.Delete(config.GameDir + "/backup.zip");
+            } catch
+            {
+
+            }
             MessageBox.Show("Successfully uninstalled!", "Good", MessageBoxButtons.OK, MessageBoxIcon.Information);
             button3.Enabled = false;
             button2.Enabled = true;
