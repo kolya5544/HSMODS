@@ -65,10 +65,11 @@ namespace ModInstaller
 
         private void LoadModList()
         {
-            using (var w = new WebClient())
+            using (var http = new HttpClient())
             {
-                string json = w.DownloadString(MODDB+"mods.json");
-                json = json.Replace("\\n", "\r\n");
+                var gTask = http.GetAsync(MODDB + "mods.json");
+                gTask.Wait(); var sTask = gTask.Result.Content.ReadAsStringAsync(); sTask.Wait();
+                string json = sTask.Result.Replace("\\n", "\r\n");
                 modlist = JsonConvert.DeserializeObject<List<Mod>>(json);
                 listBox1.Items.Clear();
                 foreach (Mod mod in modlist)
